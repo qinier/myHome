@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ddd;
+            padding: 10px 0;
+            margin: 0 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #333;
+            color: #fff;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .skill-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">周帅迪</h1>
+        <p>JAVA开发者</p>
+    </header>
+    <nav class="container">
+        <a href="#about"><i class="fas fa-user"></i> 关于我</a>
+        <a href="#skills"><i class="fas fa-laptop-code"></i> 技能</a>
+        <a href="#portfolio"><i class="fas fa-folder-open"></i> 作品集</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> 联系方式</a>
+    </nav>
+    <section id="about" class="container">
+        <h2>关于我</h2>
+        <p>我是一名JAVA开发者，专注于Java代码开发和用户体验设计。</p>
+        <p>可熟练使用前端Vue框架开发页面。</p>
+    </section>
+    <section id="skills" class="container">
+        <h2>技能</h2>
+        <ul>
+            <li><i class="fab fa-html5 skill-icon"></i> HTML/CSS</li>
+            <li><i class="fab fa-js skill-icon"></i> JavaScript (React, Vue)</li>
+            <li><i class="fab fa-java skill-icon"></i> JAVA (SpringBoot, SpringCloud)</li>
+            <li><i class="fas fa-database skill-icon"></i> 数据库管理 (MySQL, MongoDB)</li>
+            <li><i class="fas fa-server skill-icon"></i> 中间件 (RabbitMQ, Redis)</li>
+        </ul>
+    </section>
+    <section id="portfolio" class="container">
+        <h2>作品集</h2>
+        <p>查看我的最新项目...</p>
+    </section>
+    <section id="contact" class="container">
+        <h2>联系方式</h2>
+        <p>Email: 18741373685@163.com</p>
+        <p>LinkedIn: <a href="https://www.test.com/in/example">linkedin.com/in/example</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 周帅迪 | <a href="https://www.test.com">example.com</a></p>
+    </footer>
+</body>
+</html>
